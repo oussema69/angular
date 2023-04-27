@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import {MatTableDataSource} from '@angular/material/table';
+import { AddComponent } from './add/add.component';
 
 export interface PeriodicElement {
   username: string;
@@ -32,7 +34,11 @@ export class UsersComponent implements OnInit {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-  constructor() { }
+
+  openDialog() {
+    this.dialog.open(AddComponent);
+  }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }

@@ -8,13 +8,17 @@
           <h4 class="card-title"> Users list</h4>
         </div>
         <div class="card-body">
-          <mat-form-field>
-            <mat-label>Filter</mat-label>
-            <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
-          </mat-form-field>
-          <button mat-fab color="primary" aria-label="Add new user" class="text-right">
-            <mat-icon>delete</mat-icon>
-          </button>
+          <div class="div d-flex">
+            <mat-form-field>
+              <mat-label>Filter</mat-label>
+              <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+            </mat-form-field>
+            <div class="example-button-container text-right">
+              <button mat-fab aria-label="Add new user" (click)="openDialog()">
+                <mat-icon>add</mat-icon>
+              </button>
+            </div>
+          </div>
           <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
             <!-- Username Column -->
