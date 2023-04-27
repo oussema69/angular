@@ -27,7 +27,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  displayedColumns: string[] = ['username', 'email', 'password'];
+  displayedColumns: string[] = ['username', 'email', 'password','actions'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(event: Event) {
