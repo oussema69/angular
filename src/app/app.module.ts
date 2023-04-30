@@ -17,6 +17,11 @@ import { AddComponent } from './products/add/add.component';
 import { UsersComponent } from './users/users.component';
 import { RecieversComponent } from './recievers/recievers.component';
 import { CommandsComponent } from './commands/commands.component';
+import { NavbarComponent } from './frontoffice/components/navbar/navbar.component';
+import { FooterComponent } from './frontoffice/components/footer/footer.component';
+import { HomeComponent } from './frontoffice/home/home.component';
+import { ContactComponent } from './frontoffice/contact/contact.component';
+import { ProductComponent } from './frontoffice/product/product.component';
 
 
 @NgModule({
@@ -39,6 +44,11 @@ import { CommandsComponent } from './commands/commands.component';
     UsersComponent,
     RecieversComponent,
     CommandsComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    ContactComponent,
+    ProductComponent,
 
   ],
   providers: [],

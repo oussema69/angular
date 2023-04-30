@@ -4,6 +4,7 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { HomeComponent } from './frontoffice/home/home.component';
 
 const routes: Routes =[
   {
@@ -20,7 +21,10 @@ const routes: Routes =[
   }]},
   {
     path: '**',
-    redirectTo: 'dashboard'
+    redirectTo: 'home'
+  }, {
+    path: 'home',
+    component: HomeComponent
   }
 ];
 

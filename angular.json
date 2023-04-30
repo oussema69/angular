@@ -30,6 +30,7 @@
               "src/assets/demo/demo.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/chart.js/dist/Chart.min.js"
             ]
           },
@@ -88,6 +89,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/chart.js/dist/Chart.min.js"
             ],
             "styles": [
