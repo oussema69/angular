@@ -22,6 +22,9 @@ import { FooterComponent } from './frontoffice/components/footer/footer.componen
 import { HomeComponent } from './frontoffice/home/home.component';
 import { ContactComponent } from './frontoffice/contact/contact.component';
 import { ProductComponent } from './frontoffice/product/product.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
+import { ForgetPasswordComponent } from './users/forgetPassword/forgetPassword.component';
 
 
 @NgModule({
@@ -49,6 +52,9 @@ import { ProductComponent } from './frontoffice/product/product.component';
     HomeComponent,
     ContactComponent,
     ProductComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgetPasswordComponent
 
   ],
   providers: [],
